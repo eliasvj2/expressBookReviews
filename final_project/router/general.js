@@ -29,6 +29,52 @@ public_users.post("/register", (req,res) => {
     } 
     return res.status(404).json({message: "Unable to register user."});
 });
+//Asynchronous functions
+//Tasks 1-4
+// const axios = require('axios').default;
+
+// async function asyncCall(url) {
+//   console.log('calling');
+//   const result = await axios.get(url);
+//   console.log(result.data);
+// }
+// let url = "https://localhost:5000"
+// asyncCall(url);
+
+//task 2
+// const axios = require('axios').default;
+
+// async function asyncCall(url) {
+//   console.log('calling');
+//   const result = await axios.get(url);
+//   console.log(result.data);
+// }
+// url = "https://localhost:5000/1"
+// asyncCall(url);
+
+//task 3
+// const axios = require('axios').default;
+
+// async function asyncCall(url) {
+//   console.log('calling');
+//   const result = await axios.get(url);
+//   console.log(result.data);
+// }
+// url = "https://localhost:5000/Chichua Achebe"
+// asyncCall(url);
+
+//task 4
+// const axios = require('axios').default;
+
+// async function asyncCall(url) {
+//   console.log('calling');
+//   const result = await axios.get(url);
+//   console.log(result.data);
+// }
+// url = "https://localhost:5000/Jane Austen"
+// asyncCall(url);
+
+
 
 // Get the book list available in the shop
 public_users.get('/',function (req, res) {
